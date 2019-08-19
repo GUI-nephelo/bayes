@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include "bayes.h"
 
 int main()
-{
+{    
+
     printf("hello world!!");
 }
