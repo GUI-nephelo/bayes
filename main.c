@@ -4,5 +4,7 @@ int main()
 {    
 
     printf("hello world!!");
-    sa2A({1,2});
+    int a[2];
+    Array b= sa2A(a);
+    printf(b.len);
 }
