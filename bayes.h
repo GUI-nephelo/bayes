@@ -3,17 +3,16 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
-typedef struct array{
+
+
+typedef struct{
     int len;
     int *array;
 } Array;
 
-Array sa2A(int in[]){
-	Array t;
-	t.len=sizeof(in)/sizeof(int);
-	for(int i=0;i<t.len;i++)t.array[i]=in[i];
-	return t;
-}
+
+#define Array(in) (Array){(sizeof(in)/sizeof(int)),in}
 
 #endif
